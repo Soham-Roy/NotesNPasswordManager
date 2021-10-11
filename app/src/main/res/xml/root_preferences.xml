@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/header_lockscreen">
+
+        <SwitchPreferenceCompat
+            app:key="pin_lock"
+            app:title="Enable PIN lock"
+            app:defaultValue="false"/>
+
+        <EditTextPreference
+            app:key="your_pin"
+            app:title="@string/your_pin"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="@string/default_pin"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

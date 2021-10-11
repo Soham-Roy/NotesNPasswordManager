@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_notes">
+    app:startDestination="@id/lockScreenFragment">
 
     <fragment
         android:id="@+id/navigation_notes"
@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_navigation_notes_to_editItemFragment"
             app:destination="@id/editItemFragment" />
+        <action
+            android:id="@+id/action_navigation_notes_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
     <fragment
@@ -29,6 +32,9 @@
         <action
             android:id="@+id/action_navigation_passwords_to_editItemFragment"
             app:destination="@id/editItemFragment" />
+        <action
+            android:id="@+id/action_navigation_passwords_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addItemFragment"
@@ -44,5 +50,18 @@
             android:name="id"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/lockScreenFragment"
+        android:name="com.example.android.notesapp.ui.lockscreen.LockScreenFragment"
+        android:label="fragment_lock_screen"
+        tools:layout="@layout/fragment_lock_screen" >
+        <action
+            android:id="@+id/action_lockScreenFragment_to_navigation_notes"
+            app:destination="@id/navigation_notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.android.notesapp.ui.lockscreen.SettingsFragment"
+        android:label="SettingsFragment" />
 
 </navigation>
