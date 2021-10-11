@@ -22,7 +22,7 @@
             android:id="@+id/pin_input_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="numberPassword"/>
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 

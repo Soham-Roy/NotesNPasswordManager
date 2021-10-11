@@ -36,7 +36,7 @@
 
 <!--    Preferences-->
     <string name="header_lockscreen">LockScreen</string>
-    <string name="your_pin">Your PIN</string>
+    <string name="your_pin">Your Password</string>
     <string name="settings">Settings</string>
     <string name="default_pin">0000</string>
 

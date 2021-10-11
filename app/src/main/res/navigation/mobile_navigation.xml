@@ -53,7 +53,7 @@
     <fragment
         android:id="@+id/lockScreenFragment"
         android:name="com.example.android.notesapp.ui.lockscreen.LockScreenFragment"
-        android:label="fragment_lock_screen"
+        android:label="Lock Screen"
         tools:layout="@layout/fragment_lock_screen" >
         <action
             android:id="@+id/action_lockScreenFragment_to_navigation_notes"

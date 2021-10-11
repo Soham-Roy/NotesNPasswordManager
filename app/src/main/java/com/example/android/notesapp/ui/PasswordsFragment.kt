@@ -2,7 +2,6 @@ package com.example.android.notesapp.ui
 
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -67,7 +66,7 @@ class PasswordsFragment : Fragment(), ItemClickListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.settings_button -> {
-                val action = NotesFragmentDirections.actionNavigationNotesToSettingsFragment()
+                val action = PasswordsFragmentDirections.actionNavigationPasswordsToSettingsFragment()
                 findNavController().navigate(action)
                 return true
             }

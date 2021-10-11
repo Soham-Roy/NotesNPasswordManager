@@ -21,7 +21,8 @@
             android:id="@+id/title_input_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/title_item" />
+            android:hint="@string/title_item"
+            android:inputType="textCapWords"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
