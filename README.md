@@ -3,7 +3,7 @@ IIT Indore Programming Club Recruitment 2.0 -> Software Development Task
 
 ## Introduction
 This is a Notes and Password Manager app for an Android Device. The app works only on the devices with **Android 7.0 (API 21) or more**.
-The app allows user to create, update or delete notes and passwords from the local SQLite database. This app is an example of Full Stack Application Development with full Frontend, Backend and Database operation handling.
+The app allows user to create, update or delete notes and passwords from the local SQLite database. The app also provides the feature to enable password protection. This app is an example of Full Stack Application Development with full Frontend, Backend and Database operation handling.
 
 ## Libraries Used
 * ViewModel
