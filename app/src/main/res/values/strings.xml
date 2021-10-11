@@ -40,4 +40,10 @@
     <string name="settings">Settings</string>
     <string name="default_pin">0000</string>
 
+    <string name="about">About</string>
+    <string name="header_about">About Developer</string>
+    <string name="developer_info">This app is developed by Soham Roy (200003072), B.Tech student of
+        Mechanical Engineering branch, IIT Indore for the recruitment of the
+        Programming Club, Software Development Department.</string>
+
 </resources>
