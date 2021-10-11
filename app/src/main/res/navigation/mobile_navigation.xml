@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_notes">
+
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.example.android.notesapp.ui.NotesFragment"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_navigation_notes_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_navigation_notes_to_editItemFragment"
+            app:destination="@id/editItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_passwords"
+        android:name="com.example.android.notesapp.ui.PasswordsFragment"
+        android:label="@string/title_password"
+        tools:layout="@layout/fragment_passwords" >
+        <action
+            android:id="@+id/action_navigation_passwords_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_navigation_passwords_to_editItemFragment"
+            app:destination="@id/editItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.android.notesapp.ui.AddItemFragment"
+        android:label="@string/title_add_item"
+        tools:layout="@layout/fragment_add_item" >
+    </fragment>
+    <fragment
+        android:id="@+id/editItemFragment"
+        android:name="com.example.android.notesapp.ui.EditItemFragment"
+        android:label="@string/title_edit_item" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

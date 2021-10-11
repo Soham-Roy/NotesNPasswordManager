@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_corner_radius"
+    android:layout_marginBottom="@dimen/card_corner_radius"
+    android:focusable="true"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Item Title" />
+
+        <TextView
+            android:id="@+id/fixed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_updated"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            android:layout_marginTop="@dimen/card_corner_radius"
+            app:layout_constraintStart_toStartOf="@id/item_title"/>
+
+        <TextView
+            android:id="@+id/item_date_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/fixed_text"
+            app:layout_constraintStart_toEndOf="@id/fixed_text"
+            android:layout_marginStart="@dimen/card_elevation"
+            tools:text="July 8, 2020 1:26 PM"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
