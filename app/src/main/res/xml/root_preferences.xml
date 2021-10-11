@@ -14,8 +14,6 @@
             app:useSimpleSummaryProvider="true"
             app:defaultValue="@string/default_pin"/>
 
-
-
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/about">

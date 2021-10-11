@@ -30,9 +30,9 @@
     <string name="cancel">Cancel</string>
     <string name="date_updated">Date Updated : </string>
 
-    <string name="enter_pin">Enter PIN</string>
+    <string name="enter_pin">Enter Password</string>
     <string name="confirm">Confirm</string>
-    <string name="pin_error">Wrong PIN Entered !</string>
+    <string name="pin_error">Wrong Password Entered !</string>
 
 <!--    Preferences-->
     <string name="header_lockscreen">LockScreen</string>
